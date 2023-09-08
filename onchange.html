@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On change</title>
+</head>
+<body>
+    <form name="f1">
+        Choose which browser you prefer:-
+        <select onchange="t1()" id="browsers">
+            <option value="N/A">N/A</option>
+            <option value="chrome">Chrome</option>
+            <option value="edge">Edge</option>
+            <option value="Safari">Safari</option>
+            <option value="Firefox">Firefox</option>
+        </select>
+    </form>
+    </body>
+<script>
+    function t1(){
+        prefer = document.f1.browsers.value;
+        alert("You prefer browsing internet with "+prefer);    
+    }
+</script>
+</html>
