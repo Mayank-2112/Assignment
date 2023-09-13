@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tree</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is a pargraph</p>
+        <p id="p2">This is another paragraph</p>
+    </div>
+    <button id="butt1">Add new element</button>
+    <button id="butt2">Remove element</button>
+        <script>
+        var bttn1 = document.getElementById('butt1');
+        var bttn2 = document.getElementById('butt2');
+        bttn1.addEventListener('click',function(){
+            var para = document.createElement('p');
+            var node = document.createTextNode('This is New');
+            para.appendChild(node);
+            var element = document.getElementById('div1');
+            element.appendChild(para);
+        })
+        bttn2.addEventListener('click',()=>{
+            var element = document.getElementById('div1');
+            var para = document.getElementById('p1');
+            element.removeChild(para);
+        })
+    </script>
+</body>
+</html>
