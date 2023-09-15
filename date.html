@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <p id="para1">TIME</p>
+    <p id="para"></p>
+    <script>
+        var mydate = new Date();
+        var p =document.getElementById('para').innerHTML = "Hours:-"+mydate.getHours()+" Minutes:-"+mydate.getMinutes()+" Seconds:-"+mydate.getSeconds();  
+        const d = new Date();
+        d.setDate(15);
+        document.getElementById("para").innerHTML = d;
+
+    </script>
+</body>
+</html>

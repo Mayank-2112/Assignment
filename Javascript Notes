@@ -1,0 +1,21 @@
+1- Creating Node
+    
+2- Removing Node
+
+3- Adding Node
+
+4- Replacing Node
+
+In built Math Methods
+
+abs(x)
+acos(x)
+asin(x)
+atan(x)
+ceil(x)
+cox(x)
+
+
+Date object:-
+
+this object let you work with date year month day hour minutes seconds and miliseconds
